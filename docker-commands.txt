@@ -1,0 +1,24 @@
+# Create a Docker image from Dockerfile
+sudo docker build -t image-name /path/to/Dockerfile
+
+# Create a Docker container from the image
+sudo docker run -p host_listening_port:container_listening_port image-name
+
+# List all images
+sudo docker image ls
+
+# List all running containers
+sudo docker ps
+
+# List all containers, including stopped
+sudo docker ps -a
+
+# Stop a container
+sudo docker stop container-id
+
+# Delete an image from local cache
+sudo docker image rm image-id
+
+# Delete the container
+sudo docker rm container-id
+
